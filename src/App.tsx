@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
+import { MainPage } from "./components/MainPage";
+import { useState } from "react";
+import Modal from "react-modal";
+import { GlobalStyle } from "./styles/global";
+import { RegisterModal } from "./components/RegisterModal";
 
-function App() {
+Modal.setAppElement("#root");
+
+export function App() {
+  const [isRegisterModalOpen, setIsRegisterModalOpen] = useState(false);
+
+  function handleOpenRegisterModal() {
+    setIsRegisterModalOpen(true);
+  }
+
+  function handleCloseRegisterModal() {
+    setIsRegisterModalOpen(false);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header onRegisterModal={handleOpenRegisterModal} />
+      <MainPage />
+      <RegisterModal
+        isOpen={isRegisterModalOpen}
+        onResquestClose={handleCloseRegisterModal}
+      />
+      <Footer />
+      <GlobalStyle />
+    </>
   );
 }
-
-export default App;

@@ -1,46 +1,47 @@
-# Getting Started with Create React App
+# **Landing Page Healthy Food**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Desafio Frontend do Grupo GCB.
 
-## Available Scripts
+##
 
-In the project directory, you can run:
+Para rodar o projeto:
 
-### `npm start`
+clonar o repositório
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+com o projeto aberto, no terminal:
+npm install
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+yarn start
 
-### `npm test`
+## Requisitos:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+_Desenvolver o site que está em anexo, utilizando totalidade de estrutura React, o site tem que ser 100% responsivo, "iremos avaliar bem a responsividade"._
 
-### `npm run build`
+Criar uma tela de cadastro baseada na tela inicial, o cadastro precisa receber os dados abaixo:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ◻ Nome
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ◻ Data de nascimento
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ◻ CPF
 
-### `npm run eject`
+    ◻ CEP (Utilizando uma API dos correios para preencher os demais campos que compõe o endereço)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    ◻ Validação dos campos
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+_Armazenar os dados do formulário no armazenamento local e Cookies (Não precisa usar banco de dados)_
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+_Ao final, criar um repositório público e enviar o link e se possível subir o site em um domínio gratuito._
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Tecnologias utilizadas:
 
-## Learn More
+<img width="80" height="80" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" alt="React JS">
+</a>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<a href="https://www.typescriptlang.org/" target="_blank">
+<img width="80" height="80" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="Typescript">
+</a>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Landing Page](https://user-images.githubusercontent.com/82344833/146593254-25a521f2-3d02-4d43-ad7c-994803c5f682.jpeg)
+
+🔗 Site hospedado no Vercel:
